@@ -1,0 +1,19 @@
+{
+  "name": "kepler-cli",
+  "version": "1.0.0",
+  "description": "cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TYRMars/kepler-cli.git"
+  },
+  "author": "zhangjianan@1996@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TYRMars/kepler-cli/issues"
+  },
+  "homepage": "https://github.com/TYRMars/kepler-cli#readme"
+}
