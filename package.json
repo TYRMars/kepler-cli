@@ -4,16 +4,48 @@
   "description": "cli",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TYRMars/kepler-cli.git"
   },
-  "author": "zhangjianan@1996@qq.com",
+  "author": "zhangjianan1996@qq.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TYRMars/kepler-cli/issues"
   },
-  "homepage": "https://github.com/TYRMars/kepler-cli#readme"
+  "lint-staged": {
+    "*.js": [
+      "git add"
+    ]
+  },
+  "bin": {
+    "kepler-cli": "bin/index.js"
+  },
+  "engines": {
+    "node": ">=8.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/TYRMars/kepler-cli#readme",
+  "dependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/ncp": "^2.0.4",
+    "@types/ora": "^3.2.0",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^7.2.0",
+    "download-git-repo": "^3.0.2",
+    "husky": "^6.0.0",
+    "inquirer": "^8.1.0",
+    "ncp": "^2.0.0",
+    "ora": "^5.4.0",
+    "request": "^2.88.2"
+  }
 }

@@ -1,0 +1,12 @@
+node_modules
+dist
+.tmp
+.idea
+npm-debug.log
+.DS_Store
+.brackets.json
+src/*.hot-update.json
+src/*.hot-update.js
+settings.json
+.vscode
+.docz
